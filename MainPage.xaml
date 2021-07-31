@@ -1,0 +1,154 @@
+<Page
+    x:Class="limalek_A2_PROG32356_Quantum.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:limalek_A2_PROG32356_Quantum"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="600" d:DesignWidth="500"
+    mc:Ignorable="d">
+
+
+    <Grid>
+        <StackPanel Orientation="Vertical" Background="Gray">
+            <StackPanel Background="Coral" Orientation="Horizontal">
+                <TextBlock Margin="10, 0, 0, 0" Foreground="Azure" FontSize="100"  Text="Guessica" TextWrapping="Wrap"/>
+                <Button Click="CodeDocs_Click" Background="Bisque" Content="Code Docs">
+                    
+                </Button>
+            </StackPanel>
+
+
+            <TextBlock Margin="10, 0, 0, 0" Foreground="Azure" Name="CodeDocsOut">
+                
+            </TextBlock>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="10, 0, 0, 0" Foreground="Bisque" FontWeight="Bold" FontSize="25" Text="Question:">
+                    
+                </TextBlock>
+
+
+               
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="QuestionOut" Foreground="Azure" Margin="10, 0, 0, 0" Text="_____________________________________">
+                </TextBlock>
+            </StackPanel>
+            
+            <StackPanel Margin="0, 10, 0, 0" Name="SecondOuterHorizontal" Orientation="Horizontal">
+                <StackPanel Name="FirstInnerHorizontal">
+                    <StackPanel Name="FirstInnerHorizontalVertical">
+                        <TextBlock FontSize="50" FontWeight="Bold" Foreground="Bisque" Margin="10, 0, 0, 0" Text="Rounds"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="25" Margin="10, 0, 0, 0" Foreground="Bisque" Text="Start Round"/>
+                            <Button Click="StartRound_Click" Padding="0" Foreground="Coral" Margin="10, 0, 0, 0" FontSize="20" Background="Azure" Content="Go" Width="50">
+                                
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontSize="25" Margin="10, 0, 0, 0" Foreground="Bisque" Text="Next Round"/>
+                            <Button Click="NextRound_Click" Padding="0" Foreground="Coral" Margin="10, 0, 0, 0" FontSize="20" Background="Azure" Content="Go" Width="50">
+                                
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal"/>
+
+                    </StackPanel>
+
+                    
+                    
+                </StackPanel>
+
+                <StackPanel Margin="25, 0, 0, 0" Name="SecondInnerHorizontal">
+                    <TextBlock Foreground="Bisque" FontWeight="Bold" FontSize="50" Text="Movies"></TextBlock>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Bisque" Text="Movie A: "></TextBlock>
+                        <TextBlock Foreground="Azure" Name="OptionAOut" Margin="10, 10, 0, 0" Text="_____________"></TextBlock>
+                        <Button Margin="10, 0, 0, 0" Click="ASelected_Click"  Background="Azure" Foreground="Coral" Content="Go">
+                            
+                        </Button>
+                    </StackPanel>
+                    
+                    <StackPanel Margin="0, 10, 0, 0" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Bisque" Text="Movie B: "></TextBlock>
+                        <TextBlock Foreground="Azure" Name="OptionBOut" Margin="10, 10, 0, 0" Text="_____________"></TextBlock>
+                        <Button Margin="10, 0, 0, 0" Click="BSelected_Click" Background="Azure" Foreground="Coral" Content="Go">
+
+                        </Button>
+                    </StackPanel>
+
+                    <StackPanel Margin="0, 10, 0, 0" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Bisque" Text="Movie C: "></TextBlock>
+                        <TextBlock Foreground="Azure" Name="OptionCOut" Margin="10, 10, 0, 0" Text="_____________"></TextBlock>
+                        <Button Margin="10, 0, 0, 0" Click="CSelected_Click" Background="Azure" Foreground="Coral" Content="Go">
+
+                        </Button>
+                    </StackPanel>
+
+                    <StackPanel Margin="0, 10, 0, 0" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Bisque" Text="Movie D: "></TextBlock>
+                        <TextBlock Foreground="Azure" Name="OptionDOut" Margin="10, 10, 0, 0" Text="_____________"></TextBlock>
+                        <Button Margin="10, 0, 0, 0" Click="DSelected_Click"  Background="Azure" Foreground="Coral" Content="Go">
+
+                        </Button>
+                    </StackPanel>
+                    
+                </StackPanel>
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="ThirdOuterHorizontal">
+                <StackPanel>
+                    
+                        <TextBlock Margin="10, 0, 0, 0" Foreground="Bisque" FontWeight="Bold" FontSize="50" Text="Score">
+                        </TextBlock>
+                   
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Result:" Foreground="Bisque" FontSize="20" Margin="10, 0, 0, 0"></TextBlock>
+                        <TextBlock  Foreground="Azure" Name="ResultOut" Margin="10, 10, 0, 0" Text="____________"></TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Points:" Foreground="Bisque" FontSize="20" Margin="10, 0, 0, 0" />
+                        <TextBlock Foreground="Azure" Name="PointsOut" Margin="10, 10, 0, 0" Text="____________"></TextBlock>
+                    </StackPanel>
+
+                </StackPanel>
+
+                <StackPanel Margin="50, 0, 0, 0">
+
+                    <TextBlock Margin="10, 0, 0, 0" Foreground="Bisque" FontWeight="Bold" FontSize="50" Text="Sign Up">
+                    </TextBlock>
+                    
+                    <TextBlock Foreground="Bisque" FontSize="20" Text="Nickname">
+                        
+                    </TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Width="100" Name="NicknameIn">
+    
+                        </TextBox>
+                        
+                        <Button Click="GameSignUp_Click" Foreground="Coral" Background="Azure" Content="Go">
+                            
+                        </Button>
+                        
+                    </StackPanel>
+                        
+                    
+
+                </StackPanel>
+
+            </StackPanel>
+
+
+        </StackPanel>
+
+
+
+    </Grid>
+
+</Page>
