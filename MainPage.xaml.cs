@@ -103,11 +103,7 @@
 
         public void ASelected_Click(Object sender, RoutedEventArgs e) {
             try {
-            }
-            catch (Exception ex) {
-                Console.WriteLine(ex.Message);
-            }
-            Scores score = rm.AChosen();
+                 Scores score = rm.AChosen();
             Round round = rm.GetCurrentRound();
             MultipleChoices mcs = round.GetMCS();
             string answer = mcs.GetAnswer();
@@ -122,6 +118,11 @@
             {
                 PointsOut.Text = "You are incorrect";
             }//End EI:*
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+          
         }//End M:*
 
 
