@@ -1,2 +1,2 @@
 # C-Mutliple-Choice-Quiz
-Multiple choice quiz framework as easy asjustable to any use case 
+This is a mmultiple choice quiz framework as easy asjustable to any use case.  The main classes are _2018Movies.cs, GameSignUp.cs, Movie.cs, MoviesLoader.cs, MultipleChoices.cs, Player.cs, Round.cs, Scores.cs, RoundsManager.cs, MainPage.xamls.cs. The data beans are Player.cs, Movie.cs, and _2018Movies.cs. All data beans classes have full CRUD and a master list field in their respective classes. MoviesLoader.cs aggregates _2018Movies.cs and Movie.cs. MultipleChoices.cs is an independent class. It has data fields for 4 different options and stores the question and answer as well. 
