@@ -53,6 +53,11 @@
             return new Scores(player, round, score, answer);
         }//End M:*
 
+    public void Add(Scores score)
+        {
+            this.scoresList.Add(score);
+        }//End M:*
+    
         public Scores Read(int id)
         {
             for (int i = 0; i < scoresList.Count; i++)
