@@ -73,6 +73,11 @@
                                ) {
             return new Round(player, round, question, answer, mcs);
         }//End M:*
+  
+     public void Add(Round round)
+        {
+            this.roundList.Add(round);
+        }//End M:*
 
         public Round Read(int id) {
 
